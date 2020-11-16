@@ -14,5 +14,8 @@ export default  {
                 'Content-Type': 'application/json'
             }
           });
+    },
+    getFavorites: function(){
+        return axios.get("/api/favorites");
     }
 }

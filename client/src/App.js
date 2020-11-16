@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Search from "./components/Search/Search"
+import Saved from "./components/Saved/Saved"
 import "bootstrap/dist/css/bootstrap.css"
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
@@ -15,10 +16,10 @@ function App() {
       <Redirect to="/search"/>
     </Route>
     <Route exact path="/saved">
-      <h1>Saved</h1>
+      <Saved/>
     </Route>
     <Route path="*">
-      <h1>you fool. you absolute buffoon. you think you can challenge me in my own realm? you think you can rebel against my authority? you dare come into my house and upturn my dining chairs and spill coffee grounds in my Keurig? you thought you were safe in your chain mail armor behind that screen of yours. I will take these laminate wood floor boards and destroy you. I didn’t want war. but i didn’t start it.</h1>
+      <h1>Page Not found</h1>
     </Route>
     </Switch>
 
