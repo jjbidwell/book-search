@@ -7,7 +7,7 @@ import API from "../../util/API"
 
 function Searchresults (props) {
     function save(){
-       console.log(API.getBook())
+       //console.log(API.getBook())
      }
      
 //console.log(componentDidMount);
@@ -22,7 +22,7 @@ function Searchresults (props) {
                                     <img className="thumbnail" alt={element.volumeInfo.title} src={element.volumeInfo.imageLinks.thumbnail}/>
                                     <h5 className="card-title">{element.volumeInfo.title}</h5>
                                     <p className="card-text">By {element.volumeInfo.authors} </p>
-                                    <button data-index={index} className="btn btn-primary save-btn" onClick={save()}>Save to favorites</button>
+                                    <button data-index={index} className="btn btn-primary save-btn" >Save to favorites</button>
                                 </div>
                             </div>
                 
